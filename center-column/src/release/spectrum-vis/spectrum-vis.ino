@@ -32,7 +32,6 @@
 
 // System constants
 #define     START_DEL_MS        2000        // Startup delay
-#define     BRIGHTNESS          255
 
 // LED constants
 #define     ONE_8               0xFF
@@ -165,14 +164,14 @@ void loop() {
         //FastLED[5].showLeds(BRIGHTNESS);
 
         if (isRight) {
-            FastLED[1].showLeds(BRIGHTNESS);
-            FastLED[3].showLeds(BRIGHTNESS);
-            FastLED[5].showLeds(BRIGHTNESS);
+            FastLED[1].showLeds();
+            FastLED[3].showLeds();
+            FastLED[5].showLeds();
         }
         else {
-            FastLED[0].showLeds(BRIGHTNESS);
-            FastLED[4].showLeds(BRIGHTNESS);
-            FastLED[6].showLeds(BRIGHTNESS);
+            FastLED[0].showLeds();
+            FastLED[2].showLeds();
+            FastLED[4].showLeds();
         }
 
         // Next loop, sample other side
