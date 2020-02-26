@@ -156,20 +156,31 @@ void loop() {
         }
         
         // Once done setting the intensities, refresh the strip - one of 6 strips
-        
+
+        //FastLED[0].showLeds(BRIGHTNESS);
+        //FastLED[1].showLeds(BRIGHTNESS);
+        //FastLED[2].showLeds(BRIGHTNESS);
+        //FastLED[3].showLeds(BRIGHTNESS);
+        //FastLED[4].showLeds(BRIGHTNESS);
+        //FastLED[5].showLeds(BRIGHTNESS);
+
         if (isRight) {
-            FastLED[currStrip].showLeds(BRIGHTNESS);
+            FastLED[1].showLeds(BRIGHTNESS);
+            FastLED[3].showLeds(BRIGHTNESS);
+            FastLED[5].showLeds(BRIGHTNESS);
         }
         else {
-            FastLED[currStrip].showLeds(BRIGHTNESS);
+            FastLED[0].showLeds(BRIGHTNESS);
+            FastLED[4].showLeds(BRIGHTNESS);
+            FastLED[6].showLeds(BRIGHTNESS);
         }
 
         // Next loop, sample other side
         isRight = !isRight;
 
         // and also update the next strip
-        currStrip ++;
-        if (currStrip > N_STRIPS)
-            currStrip = 0;
+        //currStrip ++;
+        //if (currStrip >= 2)
+        //    currStrip = 0;
     }
 }
