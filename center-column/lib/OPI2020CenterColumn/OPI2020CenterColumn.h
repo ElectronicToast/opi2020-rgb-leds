@@ -15,9 +15,15 @@
 #define OPI2020CC_H
 
 
+#include <Heimdall.h>
+
+
 #define     N_LEDS      60          // Number of LEDs per strip
 
 #define     N_STRIPS    6           // Number of strips in the center column
+
+#define     OUT5_PIN    BTN2_PIN    // D3
+#define     OUT6_PIN    BTN3_PIN    // D4
 
 
 #endif // OPI2020CC_H
