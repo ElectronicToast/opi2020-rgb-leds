@@ -13,7 +13,5 @@ FLAGS="-C /usr/share/arduino/hardware/tools/avrdude.conf -p atmega328p -c arduin
 BINARY=$1
 PORT=${2:-/dev/ttyUSB0}
 
-cd bin
 echo "avrdude $FLAGS -P $PORT -b 115200 -D -U flash:w:$BINARY:i"
 avrdude $FLAGS -P $PORT -b 115200 -D -U flash:w:$BINARY:i
-cd ..
