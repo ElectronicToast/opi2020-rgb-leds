@@ -5,7 +5,7 @@
 // System parameters
 #define COLOR_ORDER         GRB
 #define CHIPSET             WS2811
-#define START_DELAY         3000
+//#define START_DELAY         3000
 
 // Fire2012 parameters
 #define BRIGHTNESS          255
@@ -58,7 +58,7 @@ CRGB leds[N_LEDS];
 CRGBPalette16 gPal;
 
 void setup() {
-  delay(START_DELAY); // sanity delay
+  //delay(START_DELAY); // sanity delay
   
   FastLED.addLeds<NEOPIXEL, OUT1_PIN>(leds, N_LEDS);
   FastLED.addLeds<NEOPIXEL, OUT2_PIN>(leds, N_LEDS);

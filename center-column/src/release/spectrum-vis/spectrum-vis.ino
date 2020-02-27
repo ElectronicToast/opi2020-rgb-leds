@@ -31,7 +31,7 @@
 
 
 // System constants
-#define     START_DEL_MS        2000        // Startup delay
+//#define     START_DEL_MS        2000        // Startup delay
 
 // LED constants
 #define     ONE_8               0xFF
@@ -75,7 +75,7 @@ bool isRight = false;
 
 void setup() {
     // Wait a bit with everything off
-    delay(START_DEL_MS);
+    //delay(START_DEL_MS);
     
     // Initialize and clear the strips
     FastLED.addLeds<NEOPIXEL, OUT1_PIN>(leds, N_LEDS);
