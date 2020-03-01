@@ -21,7 +21,7 @@
  *      2/25/2020       Initial revision.
  *      
  * Validation History:
- *      Untested.
+ *      2/29/2020       Deployed
  ******************************************************************************/
  
 
@@ -46,7 +46,7 @@
 
 
 // Spectrum constants 
-#define     N_INTBINS           20          // Number of FHT bins used
+#define     N_INTBINS          20          // Number of FHT bins used
 #define     N_INTERPOLATE       3           // Number of LEDs per FHT bin
 #define     SPEC_START          2           // # bin to use as the start
                                             // of the spectrum for the LEDs
@@ -54,8 +54,8 @@
 // Intensity constants 
 #define     INT_MIN             10
 #define     INT_MAX             255
-#define     INT_SR              1           // Rightshift intensity 
-#define     INT_OFF             25          // then subtract baseline
+#define     INT_SR              0           // Rightshift intensity 
+#define     INT_OFF             50          // then subtract baseline
 
 // Hue constants 
 //      Compute with ~ H_TOP_VAL (255) / N_LEDS 
