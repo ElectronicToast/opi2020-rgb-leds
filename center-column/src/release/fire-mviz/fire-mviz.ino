@@ -15,7 +15,7 @@
 #define NUM_SAMPLES         64      // Number of ADC samples to take per step
 
 // Spark parameters
-#define VOL_GAIN_SHIFT      2       // Leftshift factor on max of samples
+#define VOL_GAIN_SHIFT      3       // Leftshift factor on max of samples
   
 // Global variables
 uint8_t volumeLevel;
